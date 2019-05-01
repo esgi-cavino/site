@@ -1,5 +1,7 @@
 {
   "name": "cavino",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
