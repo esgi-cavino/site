@@ -3,7 +3,7 @@ import { LoginService } from "../../services/login.service";
 import { Subscription } from "rxjs";
 import { LoadingController } from "@ionic/angular";
 import { AlertController } from "@ionic/angular";
-import {and} from "@angular/router/src/utils/collection";
+import { MyConfig } from "../../config/config";
 
 @Component({
   selector: 'app-login',
@@ -11,7 +11,6 @@ import {and} from "@angular/router/src/utils/collection";
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-  private toto: number;
   private loginResponse: Subscription;
   private token: string = "none";
   private loginButtonStatus: boolean = false;
@@ -21,9 +20,7 @@ export class LoginPage implements OnInit {
   constructor(
       private loginService: LoginService,
       private loadCtrl: LoadingController,
-      private alrtCtrl: AlertController) {
-    this.toto = 0;
-  }
+      private alrtCtrl: AlertController) {}
 
   ngOnInit() {
   }
@@ -40,6 +37,9 @@ export class LoginPage implements OnInit {
   }
 
   connect(user: string, password: string) {
+
+    console.log("Le user : " + user + " et le password : " + password);
+
     this.loginButtonStatus = true;
     if(this.token == "none" && this.user != null && this.password != null) {
       this.loginResponse = this.loginService.login(user, password)

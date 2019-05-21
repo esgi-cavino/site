@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from "@angular/common/http";
-import {Observable, Subscription} from "rxjs";
+import { MyConfig } from "../config/config";
 
 @Injectable({
   providedIn: 'root'
@@ -15,9 +15,12 @@ export class LoginService {
   }
 
   login(user: string, password: string) : any {
-    return this.http.post("http://localhost:8080/api/signin",{
-      email: user,
-      password: password
-    });
+    return this.http.post(
+        'https://esgi-cavino-api.herokuapp.com/api/signin',
+        {
+          email: user,
+          password: password
+        }
+        );
   }
 }

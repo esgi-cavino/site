@@ -6,12 +6,13 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>login</ion-title>
+    <ion-title>Connexion</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <form class="w3-container w3-card-4 w3-light-grey">
+
+  <form name="loginForm" class="w3-container w3-card-4 w3-light-grey">
     <h2>Connexion</h2>
     <p>Entrez vos identifiants de connexion ci-dessous</p>
 
@@ -20,21 +21,24 @@
       <input
               name="email"
               type="text"
-              [value]="this.user"></p>
+              [(ngModel)] = "user"></p>
+
     <p>
       <label>mot de passe</label><br />
       <input
               name="password"
               type="password"
-              [value]="this.password"></p>
+              [(ngModel)] = "password"></p>
+
     <ion-button
             expand="block"
             shape="round"
-            [disabled]="this.loginButtonStatus"
-            (click)="connect('e@mail.com', 'password')">
+            [disabled] = "this.loginButtonStatus"
+            (click)="connect(user ,password)">
       connexion
     </ion-button><br />
   </form>
+
   <div class="w3-container w3-card-4 w3-light-grey">
     <h2>Inscription</h2>
     <p>Si vous n'êtes pas encore inscrit, vous pouvez la faire ici.</p>
@@ -43,9 +47,10 @@
             shape="round"
             [disabled]="this.loginButtonStatus"
             [routerDirection]="'root'"
-            [routerLink]="register">
+            [routerLink]="'/register'">
       inscription
     </ion-button><br />
   </div>
+
   <p>Le token : {{this.token}}</p>
 </ion-content>
