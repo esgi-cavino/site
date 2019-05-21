@@ -1,9 +1,64 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <ion-header>
   <ion-toolbar>
-    <ion-title>register</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Inscription</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <form class="w3-container w3-card-4 w3-light-grey">
+    <h2>Connexion</h2>
+    <p>Entrez vos identifiants de connexion ci-dessous</p>
+
+    <p>
+      <label>prénom</label><br />
+      <input
+              name="firstname"
+              type="text"
+              [(ngModel)] = "firstname"></p>
+
+    <p>
+      <label>nom de famille</label><br />
+      <input
+              name="lastname"
+              type="text"
+              [(ngModel)] = "lastname"></p>
+
+    <p>
+      <label>e-mail</label><br />
+      <input
+              name="email"
+              type="text"
+              [(ngModel)] = "email"></p>
+    <p>
+      <label>mot de passe</label><br />
+      <input
+              name="password"
+              type="password"
+              [(ngModel)] = "password"></p>
+
+    <p>
+      <label>retapez le mot de passe</label><br />
+      <input
+              name="password_bis"
+              type="password"
+              [(ngModel)] = "password_bis"></p>
+
+    <ion-button
+            expand="block"
+            shape="round"
+            [disabled]="this.registerButtonStatus"
+            (click)="register('toto', 'toto', 'toto@gmail.com', 'toto')">
+      inscription
+    </ion-button><br />
+  </form>
+
+  <p>Le token : {{this.token}}</p>
 
 </ion-content>
