@@ -32,8 +32,20 @@
             shape="round"
             [disabled]="this.loginButtonStatus"
             (click)="connect('e@mail.com', 'password')">
-      login
-    </ion-button>
+      connexion
+    </ion-button><br />
   </form>
+  <div class="w3-container w3-card-4 w3-light-grey">
+    <h2>Inscription</h2>
+    <p>Si vous n'êtes pas encore inscrit, vous pouvez la faire ici.</p>
+    <ion-button
+            expand="block"
+            shape="round"
+            [disabled]="this.loginButtonStatus"
+            [routerDirection]="'root'"
+            [routerLink]="register">
+      inscription
+    </ion-button><br />
+  </div>
   <p>Le token : {{this.token}}</p>
 </ion-content>

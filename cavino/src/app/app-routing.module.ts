@@ -30,7 +30,8 @@ const routes: Routes = [
   {
     path: 'single-bottle',
     loadChildren: './pages/single-bottle/single-bottle.module#SingleBottlePageModule'
-  }
+  },
+  { path: 'register', loadChildren: './pages/register/register.module#RegisterPageModule' }
 ];
 
 @NgModule({
