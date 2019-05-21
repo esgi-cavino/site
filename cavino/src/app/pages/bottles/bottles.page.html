@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Bouteilles</ion-title>
+    <ion-menu side="end" menuId="filter">
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Filtres</ion-title>
+        </ion-toolbar>
+      </ion-header>
+    </ion-menu>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-menu-toggle auto-hide="false" *ngFor="let b of bottles">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>{{b.subtitle}}</ion-card-subtitle>
+          <ion-card-title>{{b.name}}</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{b.description}}
+          <img src="../../../../resources/img/bottle.png" alt="Une image de bouteille" />
+        </ion-card-content>
+      </ion-card>
+    </ion-menu-toggle>
+  </ion-list>
+
+</ion-content>
+
+<ion-footer padding>
+  <p>Bas de page</p>
+</ion-footer>

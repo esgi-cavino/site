@@ -18,6 +18,18 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: './pages/login/login.module#LoginPageModule'
+  },
+  {
+    path: 'bottles',
+    loadChildren: './pages/bottles/bottles.module#BottlesPageModule'
+  },
+  {
+    path: 'single-appareil',
+    loadChildren: './pages/single-appareil/single-appareil.module#SingleAppareilPageModule'
+  },
+  {
+    path: 'single-bottle',
+    loadChildren: './pages/single-bottle/single-bottle.module#SingleBottlePageModule'
   }
 ];
 

@@ -1,11 +1,39 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>login</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-button expand="block" shape="round" (click)="connect()">
-    login
-  </ion-button>
+  <form class="w3-container w3-card-4 w3-light-grey">
+    <h2>Connexion</h2>
+    <p>Entrez vos identifiants de connexion ci-dessous</p>
+
+    <p>
+      <label>e-mail</label><br />
+      <input
+              name="email"
+              type="text"
+              [value]="this.user"></p>
+    <p>
+      <label>mot de passe</label><br />
+      <input
+              name="password"
+              type="password"
+              [value]="this.password"></p>
+    <ion-button
+            expand="block"
+            shape="round"
+            [disabled]="this.loginButtonStatus"
+            (click)="connect('e@mail.com', 'password')">
+      login
+    </ion-button>
+  </form>
+  <p>Le token : {{this.token}}</p>
 </ion-content>
