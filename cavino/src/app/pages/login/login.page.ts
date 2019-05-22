@@ -20,7 +20,11 @@ export class LoginPage implements OnInit {
   constructor(
       private loginService: LoginService,
       private loadCtrl: LoadingController,
-      private alrtCtrl: AlertController) {}
+      private alrtCtrl: AlertController) {
+    if(localStorage.getItem("token") !== null && localStorage.getItem("token") !== "") {
+      this.token = localStorage.getItem("token");
+    }
+  }
 
   ngOnInit() {
   }
@@ -41,12 +45,14 @@ export class LoginPage implements OnInit {
     console.log("Le user : " + user + " et le password : " + password);
 
     this.loginButtonStatus = true;
-    if(this.token == "none" && this.user != null && this.password != null) {
+    if(localStorage.getItem("token") !== null && localStorage.getItem("token") !== "" && this.user !== null && this.password !== null) {
       this.loginResponse = this.loginService.login(user, password)
           .subscribe((response) => {
             console.log(response.token);
             this.token = response.token;
             this.presentAlert("Connected", "connected", "You are now connected", ['ok']);
+            localStorage.setItem("token", response.token);
+            console.log("Le token from \"localStorage\" : " + localStorage.getItem("token"));
           });
     } else {
       this.presentAlert("Connected", "Already connected", "You are already connected", ['ok']);

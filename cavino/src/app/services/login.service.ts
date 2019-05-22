@@ -16,7 +16,7 @@ export class LoginService {
 
   login(user: string, password: string) : any {
     return this.http.post(
-        'https://esgi-cavino-api.herokuapp.com/api/signin',
+        'http://localhost:8080/api/signin',
         {
           email: user,
           password: password

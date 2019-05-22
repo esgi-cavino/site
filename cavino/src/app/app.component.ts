@@ -9,7 +9,29 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
-  public appPages = [
+
+  private token: string;
+  private alreadyConnected: boolean;
+
+  public offlineAppPages = [
+    {
+      title: 'Accueil',
+      url: '/home',
+      icon: 'home'
+    },
+    {
+      title: 'Connexion',
+      url: '/login',
+      icon: 'lock'
+    },
+    {
+      title: 'Inscription',
+      url: '/register',
+      icon: 'person'
+    }
+  ];
+
+  public onlineAppPages = [
     {
       title: 'Accueil',
       url: '/home',
@@ -21,13 +43,8 @@ export class AppComponent {
       icon: 'wine'
     },
     {
-      title: 'Connexion',
-      url: '/login',
-      icon: 'lock'
-    },
-    {
-      title: 'Inscription',
-      url: '/register',
+      title: 'Profil',
+      url: '/profile',
       icon: 'person'
     }
   ];
@@ -44,6 +61,13 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      if(localStorage.getItem("token") !== null && localStorage.getItem("token") !== "") {
+        this.token = localStorage.getItem("token");
+        this.alreadyConnected = true;
+      } else {
+        this.token = "";
+        this.alreadyConnected = false;
+      }
     });
   }
 }
