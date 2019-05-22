@@ -1,0 +1,28 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Informations personnelles</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card class="w3-container w3-card-4 w3-light-grey">
+    <ion-card-title>Connexion</ion-card-title><br />
+    <ion-card-subtitle>prénom</ion-card-subtitle>
+    <input
+            name="firstname"
+            type="text"
+            [(ngModel)]="firstname" />
+    <ion-card-subtitle>nom de famille</ion-card-subtitle>
+    <ion-card-content>Mon nom de famille</ion-card-content>
+    <ion-card-subtitle>Membre depuis</ion-card-subtitle>
+    <ion-card-content>createdAt</ion-card-content>
+  </ion-card>
+
+</ion-content>

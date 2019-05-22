@@ -4,7 +4,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 @Injectable({
   providedIn: 'root'
 })
-export class LoginService {
+export class UserService {
 
   private headers: HttpHeaders;
 
@@ -13,13 +13,9 @@ export class LoginService {
     this.headers.append('Content-Type','application/json');
   }
 
-  login(user: string, password: string) : any {
-    return this.http.post(
-        'http://localhost:8080/api/signin',
-        {
-          email: user,
-          password: password
-        }
-        );
+  getUserInfo(token: string) : any {
+    return this.http.get(
+        'localhost:8080/api/user/' + token
+    );
   }
 }
