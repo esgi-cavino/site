@@ -12,7 +12,7 @@ import {Router} from "@angular/router";
 export class AppComponent {
 
   private token: string;
-  private alreadyConnected: boolean;
+  public alreadyConnected: boolean;
 
   public offlineAppPages = [
     {

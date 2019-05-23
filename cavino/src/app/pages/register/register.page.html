@@ -12,9 +12,9 @@
 
 <ion-content>
 
-  <form class="w3-container w3-card-4 w3-light-grey">
-    <h2>Connexion</h2>
-    <p>Entrez vos identifiants de connexion ci-dessous</p>
+  <form name="registerForm" class="w3-container w3-card-4 w3-light-grey">
+    <h2>Inscription</h2>
+    <p>Entrez vos informations ci-dessous afin de vous inscrire.</p>
 
     <p>
       <label>prénom</label><br />
@@ -22,14 +22,12 @@
               name="firstname"
               type="text"
               [(ngModel)] = "firstname"></p>
-
     <p>
       <label>nom de famille</label><br />
       <input
               name="lastname"
               type="text"
               [(ngModel)] = "lastname"></p>
-
     <p>
       <label>e-mail</label><br />
       <input
@@ -42,7 +40,6 @@
               name="password"
               type="password"
               [(ngModel)] = "password"></p>
-
     <p>
       <label>retapez le mot de passe</label><br />
       <input
@@ -53,12 +50,9 @@
     <ion-button
             expand="block"
             shape="round"
-            [disabled]="this.registerButtonStatus"
-            (click)="register('toto', 'toto', 'toto@gmail.com', 'toto')">
+            (click)="register(firstname, lastname, email, password )">
       inscription
     </ion-button><br />
   </form>
-
-  <p>Le token : {{this.token}}</p>
 
 </ion-content>

@@ -18,11 +18,30 @@
     <input
             name="firstname"
             type="text"
-            [(ngModel)]="firstname" />
+            [value]="firstname"
+            [(ngModel)] = "firstname" />
+    <br />
     <ion-card-subtitle>nom de famille</ion-card-subtitle>
-    <ion-card-content>Mon nom de famille</ion-card-content>
+    <input
+            name="lastname"
+            type="text"
+            [value]="lastname"
+            [(ngModel)] = "lastname" />
+    <br />
     <ion-card-subtitle>Membre depuis</ion-card-subtitle>
-    <ion-card-content>createdAt</ion-card-content>
+    <input
+            name="createdAt"
+            type="text"
+            [value]="createdAt"
+            [(ngModel)] = "createdAt" />
+    <br />
+    <ion-button
+            expand="block"
+            shape="round"
+            (click)="userInfo()">
+      get user infos
+    </ion-button>
+    <br />
   </ion-card>
 
 </ion-content>

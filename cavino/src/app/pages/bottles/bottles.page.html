@@ -19,14 +19,21 @@
   <ion-list>
     <ion-menu-toggle auto-hide="false" *ngFor="let b of bottles">
       <ion-card>
-        <ion-card-header>
-          <ion-card-subtitle>{{b.subtitle}}</ion-card-subtitle>
-          <ion-card-title>{{b.name}}</ion-card-title>
-        </ion-card-header>
-
         <ion-card-content>
-          {{b.description}}
-          <img src="../../../../resources/img/bottle.png" alt="Une image de bouteille" />
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-card-header>
+                  <ion-card-title>{{b.name}}</ion-card-title>
+                  <ion-card-subtitle>{{b.subtitle}}</ion-card-subtitle>
+                </ion-card-header>
+                {{b.description}}
+              </ion-col>
+              <ion-col>
+                <ion-img class="bottle_mini" src="/assets/medoc-2014.jpg"></ion-img>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
         </ion-card-content>
       </ion-card>
     </ion-menu-toggle>

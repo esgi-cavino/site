@@ -13,9 +13,9 @@ export class UserService {
     this.headers.append('Content-Type','application/json');
   }
 
-  getUserInfo(token: string) : any {
+  getUserInfo(uuid: string) : any {
     return this.http.get(
-        'localhost:8080/api/user/' + token
+        'localhost:8080/api/user/' + uuid
     );
   }
 }

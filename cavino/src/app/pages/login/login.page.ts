@@ -3,10 +3,7 @@ import { LoginService } from "../../services/login.service";
 import { Subscription } from "rxjs";
 import { LoadingController } from "@ionic/angular";
 import { AlertController } from "@ionic/angular";
-import { MyConfig } from "../../config/config";
 import {Router} from "@angular/router";
-import {AppModule} from "../../app.module";
-import {UserService} from "../../services/user.service";
 
 @Component({
   selector: 'app-login',
@@ -15,19 +12,16 @@ import {UserService} from "../../services/user.service";
 })
 export class LoginPage implements OnInit {
   private loginResponse: Subscription;
-  private userResponse: Subscription;
   private token: string = "";
   private loginButtonStatus: boolean = false;
   private user: string = "";
   private password: string = "";
 
   constructor(
-      private userService: UserService,
       private loginService: LoginService,
       private loadCtrl: LoadingController,
       private alrtCtrl: AlertController,
-      private router: Router,
-      private appModule: AppModule) {}
+      private router: Router) {}
 
   ngOnInit() {
   }
@@ -45,44 +39,28 @@ export class LoginPage implements OnInit {
 
   connect(user: string, password: string) {
 
-    console.log("Le user : " + user + " et le password : " + password + "token : " + this.token);
-
     this.loginButtonStatus = true;
-    if(this.user == "" || this.password == "")
+    if(this.user == "" || this.password == "")// Check if both email and password has been filled
     {
       this.presentAlert("Erreur", "Veuillez renseigner vos identifiants", null, ['ok']);
     }
-    else if(localStorage.getItem("token") == null || localStorage.getItem("token") == "")
+    else if(localStorage.getItem("token") == null || localStorage.getItem("token") == "")// Check if no token has already been registered
     {
       this.loginResponse = this.loginService.login(user, password)
           .subscribe((response) => {
-            console.log(response.token);
+            console.log("La réponse : ", response);
             this.token = response.token;
             this.presentAlert("Connected", "connected", "You are now connected", ['ok']);
             localStorage.setItem("token", response.token);
             console.log("Le token from \"localStorage\" : " + localStorage.getItem("token"));
-            this.userInfo(this.token);
-            this.router.navigateByUrl('/home');
           });
+      this.router.navigateByUrl('/home');
     }
-    else
-      {
+    else// This should never happen because this page shouldn't be reachable in case that you are already connected
+    {
         this.presentAlert("Connected", "Already connected", "You are already connected with the token " + localStorage.getItem("token"), ['ok']);
         console.log("token : " + this.token);
     }
     this.loginButtonStatus = false;
-  }
-
-  userInfo(token: string) {
-    this.userResponse = this.userService.getUserInfo(token)
-        .subscribe((response) => {
-          console.log(response.uuid);
-          localStorage.setItem("uuid", response.uuid);
-          localStorage.setItem("firstname", response.firstname);
-          localStorage.setItem("lastname", response.lastname);
-          localStorage.setItem("email", response.email);
-          localStorage.setItem("createdAt", response.createdAt);
-          localStorage.setItem("updatedAt", response.updatedAt);
-        })
   }
 }
