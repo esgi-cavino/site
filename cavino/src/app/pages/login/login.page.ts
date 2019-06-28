@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { LoginService } from "../../services/login.service";
-import { Subscription } from "rxjs";
-import { LoadingController } from "@ionic/angular";
-import { AlertController } from "@ionic/angular";
-import {Router} from "@angular/router";
+import { LoginService } from '../../services/login.service';
+import { Subscription } from 'rxjs';
+import { LoadingController } from '@ionic/angular';
+import { AlertController } from '@ionic/angular';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,10 +12,10 @@ import {Router} from "@angular/router";
 })
 export class LoginPage implements OnInit {
   private loginResponse: Subscription;
-  private token: string = "";
-  private loginButtonStatus: boolean = false;
-  private user: string = "";
-  private password: string = "";
+  private token = '';
+  private loginButtonStatus = false;
+  private user = '';
+  private password = '';
 
   constructor(
       private loginService: LoginService,
@@ -28,10 +28,10 @@ export class LoginPage implements OnInit {
 
   async presentAlert(header: string, subHeader: string, message: string, buttons: Array<string>) {
     const alert = await this.alrtCtrl.create({
-      header: header,
-      subHeader: subHeader,
-      message: message,
-      buttons: buttons
+      header,
+      subHeader,
+      message,
+      buttons
     });
 
     await alert.present();
@@ -40,26 +40,25 @@ export class LoginPage implements OnInit {
   connect(user: string, password: string) {
 
     this.loginButtonStatus = true;
-    if(this.user == "" || this.password == "")// Check if both email and password has been filled
-    {
-      this.presentAlert("Erreur", "Veuillez renseigner vos identifiants", null, ['ok']);
-    }
-    else if(localStorage.getItem("token") == null || localStorage.getItem("token") == "")// Check if no token has already been registered
-    {
+    if (this.user === '' || this.password === '') {// Check if both email and password has been filled
+      this.presentAlert('Erreur', 'Veuillez renseigner vos identifiants', null, ['ok']);
+    } else if (localStorage.getItem('token') == null ||
+        localStorage.getItem('token') === '') {// Check if no token has already been registered
       this.loginResponse = this.loginService.login(user, password)
           .subscribe((response) => {
-            console.log("La réponse : ", response);
+            console.log('La réponse : ', response);
             this.token = response.token;
-            this.presentAlert("Connected", "connected", "You are now connected", ['ok']);
-            localStorage.setItem("token", response.token);
-            console.log("Le token from \"localStorage\" : " + localStorage.getItem("token"));
+            this.presentAlert('Connected', 'connected', 'You are now connected', ['ok']);
+            localStorage.setItem('token', response.token);
+            console.log('Le token from \"localStorage\" : ' + localStorage.getItem('token'));
           });
       this.router.navigateByUrl('/home');
-    }
-    else// This should never happen because this page shouldn't be reachable in case that you are already connected
-    {
-        this.presentAlert("Connected", "Already connected", "You are already connected with the token " + localStorage.getItem("token"), ['ok']);
-        console.log("token : " + this.token);
+    } else {
+        this.presentAlert('Connected',
+            'Already connected',
+            'You are already connected with the token ' + localStorage.getItem('token'),
+            ['ok']);
+        console.log('token : ' + this.token);
     }
     this.loginButtonStatus = false;
   }

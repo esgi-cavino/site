@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76b6bb6c-17fc-4e54-9f88-38d4676a087c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cavino/src/assets/bottle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/site.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/site.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cavino/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/cavino/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cavino/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/cavino/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cavino/resources/img/bottle.png" beforeDir="false" afterPath="$PROJECT_DIR$/cavino/src/app/pages/bottles/bottle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cavino/resources/img/medoc-2014.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/cavino/src/assets/medoc-2014.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cavino/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cavino/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cavino/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/bottles/bottles.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/cavino/src/app/pages/bottles/bottles.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/bottles/bottles.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cavino/src/app/pages/bottles/bottles.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/login/login.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/cavino/src/app/pages/login/login.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/login/login.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cavino/src/app/pages/login/login.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/profile/profile.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/cavino/src/app/pages/profile/profile.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/profile/profile.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cavino/src/app/pages/profile/profile.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/register/register.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/cavino/src/app/pages/register/register.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/cavino/src/app/services/user.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -66,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cavino/src/app/pages/profile/profile.page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
+            <state relative-caret-position="697">
               <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
             </state>
           </provider>
@@ -75,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cavino/src/app/pages/login/login.page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="527">
               <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
             </state>
           </provider>
@@ -93,8 +80,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cavino/src/app/pages/bottles/bottles.page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="27" column="71" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
+            <state relative-caret-position="782">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -171,11 +158,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="127" />
-    <option name="width" value="1440" />
-    <option name="height" value="774" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1294" />
+    <option name="height" value="1407" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -356,18 +342,20 @@
       <workItem from="1558357171788" duration="16108000" />
       <workItem from="1558464108806" duration="10936000" />
       <workItem from="1558509197332" duration="27349000" />
-      <workItem from="1558600562525" duration="1645000" />
+      <workItem from="1558600562525" duration="5045000" />
+      <workItem from="1559219078089" duration="14000" />
+      <workItem from="1559219172399" duration="1592000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78856000" />
+    <option name="totallyTimeSpent" value="83862000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="0" width="1294" height="1407" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17184402" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20700637" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -380,7 +368,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32967034" />
       <window_info anchor="bottom" id="TypeScript" order="9" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24220963" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.13422292" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -597,6 +585,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cavino/src/app/pages/profile/profile.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cavino/src/app/pages/login/login.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cavino/src/app/pages/bottles/bottles.page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cavino/src/app/pages/register/register.page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
@@ -614,31 +623,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cavino/src/app/pages/profile/profile.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cavino/src/app/pages/login/login.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cavino/src/app/pages/bottles/bottles.page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cavino/src/app/pages/bottles/bottles.page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="27" column="71" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
+        <state relative-caret-position="782">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>

@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-import {Router} from "@angular/router";
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -24,11 +24,6 @@ export class AppComponent {
       title: 'Connexion',
       url: '/login',
       icon: 'log-in'
-    },
-    {
-      title: 'Inscription',
-      url: '/register',
-      icon: 'person'
     }
   ];
 
@@ -57,11 +52,11 @@ export class AppComponent {
     private router: Router
   ) {
     this.initializeApp();
-    if(localStorage.getItem("token") !== null && localStorage.getItem("token") !== "") {
-      this.token = localStorage.getItem("token");
+    if (localStorage.getItem('token') !== null && localStorage.getItem('token') !== '') {
+      this.token = localStorage.getItem('token');
       this.alreadyConnected = true;
     } else {
-      this.token = "";
+      this.token = '';
       this.alreadyConnected = false;
     }
   }
@@ -74,8 +69,8 @@ export class AppComponent {
   }
 
   logout() {
-    this.token = "";
-    localStorage.setItem("token", "");
+    this.token = '';
+    localStorage.setItem('token', '');
     this.alreadyConnected = false;
     this.router.navigateByUrl('/home');
   }

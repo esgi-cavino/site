@@ -1,46 +1,46 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>Mes bouteilles</ion-title>
-    <ion-menu side="end" menuId="filter">
-      <ion-header>
-        <ion-toolbar color="primary">
-          <ion-title>Filtres</ion-title>
-        </ion-toolbar>
-      </ion-header>
-    </ion-menu>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Mes bouteilles</ion-title>
+        <ion-menu side="end" menuId="filter">
+            <ion-header>
+                <ion-toolbar color="primary">
+                    <ion-title>Filtres</ion-title>
+                </ion-toolbar>
+            </ion-header>
+        </ion-menu>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
 
-  <ion-list>
-    <ion-menu-toggle auto-hide="false" *ngFor="let b of bottles">
-      <ion-card>
-        <ion-card-content>
-          <ion-grid>
-            <ion-row>
-              <ion-col>
-                <ion-card-header>
-                  <ion-card-title>{{b.name}}</ion-card-title>
-                  <ion-card-subtitle>{{b.subtitle}}</ion-card-subtitle>
-                </ion-card-header>
-                {{b.description}}
-              </ion-col>
-              <ion-col>
-                <ion-img class="bottle_mini" src="/assets/medoc-2014.jpg"></ion-img>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-card-content>
-      </ion-card>
-    </ion-menu-toggle>
-  </ion-list>
+    <ion-list>
+        <ion-menu-toggle auto-hide="false" *ngFor="let b of bottles">
+            <ion-card [routerDirection]="'root'" [routerLink]="'/bottle'">
+                <ion-card-content>
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col>
+                                <ion-card-header>
+                                    <ion-card-title>{{b.name}}</ion-card-title>
+                                    <ion-card-subtitle>{{b.subtitle}}</ion-card-subtitle>
+                                </ion-card-header>
+                                {{b.description}}
+                            </ion-col>
+                            <ion-col>
+                                <ion-img class="bottle_mini" src="/assets/medoc-2014.jpg"></ion-img>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </ion-card-content>
+            </ion-card>
+        </ion-menu-toggle>
+    </ion-list>
 
 </ion-content>
 
 <ion-footer padding>
-  <p>Bas de page</p>
+    <p>Bas de page</p>
 </ion-footer>

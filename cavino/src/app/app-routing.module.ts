@@ -12,10 +12,6 @@ const routes: Routes = [
     loadChildren: './home/home.module#HomePageModule'
   },
   {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
-  },
-  {
     path: 'login',
     loadChildren: './pages/login/login.module#LoginPageModule'
   },
@@ -34,7 +30,9 @@ const routes: Routes = [
   {
     path: 'register',
     loadChildren: './pages/register/register.module#RegisterPageModule'
-  },  { path: 'profile', loadChildren: './pages/profile/profile.module#ProfilePageModule' }
+  },
+  { path: 'profile', loadChildren: './pages/profile/profile.module#ProfilePageModule' },
+  { path: 'bottle', loadChildren: './pages/bottle/bottle.module#BottlePageModule' }
 
 ];
 
