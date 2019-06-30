@@ -58,6 +58,7 @@ export class LoginPage implements OnInit {
             'Already connected',
             'You are already connected with the token ' + localStorage.getItem('token'),
             ['ok']);
+        location.reload();
         console.log('token : ' + this.token);
     }
     this.loginButtonStatus = false;

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Subscription } from "rxjs";
-import { UserService } from "../../services/user.service";
-import { HttpClient } from "@angular/common/http";
+import {Observable} from 'rxjs';
+import {HttpClient} from '@angular/common/http';
+import {NavController} from '@ionic/angular';
 
 @Component({
   selector: 'app-profile',
@@ -10,35 +10,16 @@ import { HttpClient } from "@angular/common/http";
 })
 export class ProfilePage implements OnInit {
 
-  private uuid: string;
-  private firstname: string;
-  private lastname: string;
-  private createdAt: string;
+  userInfo: Observable<any>;
+  uuid = localStorage.getItem('uuid');
+  urlCall = 'https://esgi-cavino-api.herokuapp.com/api/user/' + this.uuid
 
-  private userResponse: Subscription;
-
-  constructor(private userService: UserService, private httpClient: HttpClient) {
-    this.uuid = localStorage.getItem("uuid");
-    this.firstname = localStorage.getItem("firstname");
-    this.lastname = localStorage.getItem("lastname");
-    this.createdAt = localStorage.getItem("createdAt");
-    console.log("uuid : " + this.uuid + "\nfirstname : " + this.firstname);
+  constructor(public navCtrl: NavController, public httpClient: HttpClient) {
+    this.userInfo = httpClient.get(this.urlCall);
+    this.userInfo.subscribe(data => {
+      console.log('La data : ', data);
+    });
   }
-
-  ngOnInit() {
-    this.userInfo();
-  }
-
-  userInfo() {
-    localStorage.setItem("uuid", "b346f5d3-5a80-4f73-b689-94fa888afb87");
-    console.log("localStorage.uuid : " + localStorage.getItem("uuid"));
-
-    if(localStorage.getItem("uuid") == null || localStorage.getItem("uuid") == "") {
-    } else {
-      this.userResponse = this.httpClient.get('localhost:8080/api/user/b346f5d3-5a80-4f73-b689-94fa888afb87')
-          .subscribe(response => {
-            console.log('my data: ', response);
-          })
-    }
+  ngOnInit(): void {
   }
 }

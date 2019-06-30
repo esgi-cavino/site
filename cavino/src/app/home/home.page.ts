@@ -8,5 +8,5 @@ import { ApplicationModel } from '../constants/generalconstants';
 })
 
 export class HomePage {
-  name = ApplicationModel.name;
+  appliName = ApplicationModel.name;
 }
