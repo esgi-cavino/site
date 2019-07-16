@@ -45,11 +45,12 @@
       <input
               name="password_bis"
               type="password"
-              [(ngModel)] = "password_bis"></p>
+              [(ngModel)] = "passwordbis"></p>
 
     <ion-button
             expand="block"
             shape="round"
+            [disabled]="registerButtonStatus"
             (click)="register(firstname, lastname, email, password )">
       inscription
     </ion-button><br />

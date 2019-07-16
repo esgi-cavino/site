@@ -8,5 +8,7 @@ import { ApplicationModel } from '../constants/generalconstants';
 })
 
 export class HomePage {
+
+  constructor() {}
   appliName = ApplicationModel.name;
 }

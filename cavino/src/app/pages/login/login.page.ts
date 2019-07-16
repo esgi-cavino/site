@@ -4,6 +4,8 @@ import { Subscription } from 'rxjs';
 import { LoadingController } from '@ionic/angular';
 import { AlertController } from '@ionic/angular';
 import {Router} from '@angular/router';
+import {promise} from 'selenium-webdriver';
+import {timeout} from 'rxjs/operators';
 
 @Component({
   selector: 'app-login',
@@ -37,6 +39,10 @@ export class LoginPage implements OnInit {
     await alert.present();
   }
 
+  goToHome() {
+      this.router.navigateByUrl('/home');
+  }
+
   connect(user: string, password: string) {
 
     this.loginButtonStatus = true;
@@ -46,13 +52,10 @@ export class LoginPage implements OnInit {
         localStorage.getItem('token') === '') {// Check if no token has already been registered
       this.loginResponse = this.loginService.login(user, password)
           .subscribe((response) => {
-            console.log('La réponse : ', response);
-            this.token = response.token;
-            this.presentAlert('Connected', 'connected', 'You are now connected', ['ok']);
+            // this.presentAlert('Connected', 'connected', 'You are now connected', ['ok']);
             localStorage.setItem('token', response.token);
-            console.log('Le token from \"localStorage\" : ' + localStorage.getItem('token'));
-          });
-      this.router.navigateByUrl('/home');
+            localStorage.setItem('uuid', response.uuid);
+          }).then(this.router.navigateByUrl('/home'));
     } else {
         this.presentAlert('Connected',
             'Already connected',

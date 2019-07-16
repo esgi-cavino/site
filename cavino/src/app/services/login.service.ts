@@ -8,20 +8,18 @@ import { ApplicationModel } from '../constants/generalconstants';
 
 export class LoginService {
 
-  private headers: HttpHeaders;
+  private options = { headers: new HttpHeaders({'Content-Type': 'application/json'})};
   private loginUri = ApplicationModel.DefaultApplicationDetails.onlineUrl + ApplicationModel.DefaultApplicationDetails.loginRoute
 
-  constructor(private http: HttpClient) {
-    this.headers = new HttpHeaders();
-    this.headers.append('Content-Type', 'application/json');
+  constructor(private httpClient: HttpClient) {
   }
 
   login(user: string, password: string): any {
-    return this.http.post(
+    return this.httpClient.post(
         this.loginUri,
         {
           email: user,
           password
-        });
+        }, this.options);
   }
 }

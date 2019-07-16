@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import {Observable} from 'rxjs';
+import {Observable, Subscription} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
-import {NavController} from '@ionic/angular';
+import {AlertController, LoadingController, NavController} from '@ionic/angular';
+import {UserService} from '../../services/user.service';
+import {LoginService} from '../../services/login.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -10,16 +13,30 @@ import {NavController} from '@ionic/angular';
 })
 export class ProfilePage implements OnInit {
 
-  userInfo: Observable<any>;
-  uuid = localStorage.getItem('uuid');
-  urlCall = 'https://esgi-cavino-api.herokuapp.com/api/user/' + this.uuid
+  private userResponse: Subscription;
+  private uuid: string;
+  private urlCall: string;
+  private userButtonStatus: boolean;
 
-  constructor(public navCtrl: NavController, public httpClient: HttpClient) {
-    this.userInfo = httpClient.get(this.urlCall);
-    this.userInfo.subscribe(data => {
-      console.log('La data : ', data);
-    });
+  // uuid = localStorage.getItem('uuid');
+
+  constructor(
+      private loginService: LoginService,
+      private userService: UserService,
+      private loadCtrl: LoadingController,
+      private alrtCtrl: AlertController,
+      private router: Router) {}
+
+  ngOnInit() {
+    this.uuid = 'f19cafae-231b-4f6e-bc5f-074e393337ca';
+    this.urlCall = 'https://esgi-cavino-api.herokuapp.com/api/user/' + this.uuid;
+    this.userButtonStatus = false;
   }
-  ngOnInit(): void {
+
+  getUserInfo() {
+    this.userResponse = this.userService.getUserInfo()
+        .subscribe((response) => {
+          console.log('La reponse : ', response);
+        });
   }
 }

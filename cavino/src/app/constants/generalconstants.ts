@@ -1,4 +1,4 @@
-class IPlayer {
+class ApplicationDetails {
     private name: string;
     public onlineUrl: string;
     public offlineUrl: string;
@@ -9,7 +9,7 @@ class IPlayer {
 export class ApplicationModel {
 
     // @ts-ignore
-    public static readonly   DefaultApplicationDetails: IPlayer = {
+    public static readonly   DefaultApplicationDetails: ApplicationDetails = {
 
         name: 'Cavino',
         onlineUrl: 'https://esgi-cavino-api.herokuapp.com/api',

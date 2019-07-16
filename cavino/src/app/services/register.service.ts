@@ -1,25 +1,27 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from "@angular/common/http";
-import {Observable, Subscription} from "rxjs";
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { ApplicationModel } from '../constants/generalconstants';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class RegisterService {
 
-  private headers: HttpHeaders;
+  private headers: HttpHeaders = new HttpHeaders({'Content-Type': 'application/json'});
+  private registerUri = ApplicationModel.DefaultApplicationDetails.onlineUrl + ApplicationModel.DefaultApplicationDetails.registerRoute;
 
-  constructor(private http: HttpClient) {
-    this.headers = new HttpHeaders();
-    this.headers.append('Content-Type','application/json');
+  constructor(private httpClient: HttpClient) {
   }
 
-  register(firstname: string, lastname: string, email: string, password: string) : any {
-    return this.http.post("http://localhost:8080/api/signup", {
-      firstname: firstname,
-      lastname: lastname,
-      email: email,
-      password: password
-    });
+  register(firstname: string, lastname: string, email: string, password: string): any {
+    return this.httpClient.post(
+        this.registerUri,
+        {
+          firstname,
+          lastname,
+          email,
+          password
+        });
   }
 }
