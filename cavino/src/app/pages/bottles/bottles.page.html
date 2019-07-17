@@ -17,7 +17,7 @@
 <ion-content padding>
 
     <ion-list>
-        <ion-menu-toggle auto-hide="false" *ngFor="let b of bottles">
+        <ion-menu-toggle auto-hide="false" *ngFor="let b of bottleList">
             <ion-card [routerDirection]="'root'" [routerLink]="'/bottle'">
                 <ion-card-content>
                     <ion-grid>
@@ -25,9 +25,18 @@
                             <ion-col>
                                 <ion-card-header>
                                     <ion-card-title>{{b.name}}</ion-card-title>
-                                    <ion-card-subtitle>{{b.subtitle}}</ion-card-subtitle>
+                                    <ion-card-subtitle>{{b.description}}</ion-card-subtitle>
                                 </ion-card-header>
-                                {{b.description}}
+                                <ul>
+                                    <li>prix actuel : {{b.price}}</li>
+                                    <li>prix moyen : {{b.averagePrice}}</li>
+                                    <li>pays : {{b.country.name}}</li>
+                                    <li>région : {{b.region.name}}</li>
+                                    <li>domain : {{b.domain.name}}</li>
+                                    <li>couleur : {{b.wineType.name}}</li>
+                                    <li>Millésime : {{b.vintage.year}}</li>
+                                </ul>
+                                <ion-img class="abicon" src="/assets/agriculture_biologique.png"></ion-img>
                             </ion-col>
                             <ion-col>
                                 <ion-img class="bottle_mini" src="/assets/medoc-2014.jpg"></ion-img>
@@ -40,6 +49,14 @@
     </ion-list>
 
 </ion-content>
+
+<ion-button
+        expand="block"
+        shape="round"
+        [disabled]="bottlesButtonStatus"
+        (click)="getUserBottles()">
+    update user infos
+</ion-button>
 
 <ion-footer padding>
     <p>Bas de page</p>

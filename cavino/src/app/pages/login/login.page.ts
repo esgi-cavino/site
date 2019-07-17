@@ -4,8 +4,6 @@ import { Subscription } from 'rxjs';
 import { LoadingController } from '@ionic/angular';
 import { AlertController } from '@ionic/angular';
 import {Router} from '@angular/router';
-import {promise} from 'selenium-webdriver';
-import {timeout} from 'rxjs/operators';
 
 @Component({
   selector: 'app-login',
@@ -55,7 +53,7 @@ export class LoginPage implements OnInit {
             // this.presentAlert('Connected', 'connected', 'You are now connected', ['ok']);
             localStorage.setItem('token', response.token);
             localStorage.setItem('uuid', response.uuid);
-          }).then(this.router.navigateByUrl('/home'));
+          });
     } else {
         this.presentAlert('Connected',
             'Already connected',

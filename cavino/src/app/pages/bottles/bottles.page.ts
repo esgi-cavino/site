@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Subscription} from 'rxjs';
+import {BottlesService} from '../../services/bottles.service';
 
 @Component({
   selector: 'app-bottles',
@@ -7,47 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BottlesPage implements OnInit {
 
-  public bottles = [
-    {
-      name: 'Chateau neuf du pape',
-      color: 'red',
-      image: 'none',
-      subtitle: 'The famous wine',
-      description: 'The description of the most famous wine in the world'
-    },
-    {
-      name: 'Chablis',
-      color: 'white',
-      image: 'none',
-      subtitle: 'The famous wine',
-      description: 'The description of the most famous wine in the world'
-    },
-    {
-      name: 'Cotes de Provence',
-      color: 'roré',
-      image: 'none',
-      subtitle: 'The famous wine',
-      description: 'The description of the most famous wine in the world'
-    }
-  ];
+  private bottlesResponse: Subscription;
+  private bottlesButtonStatus: boolean;
+  private bottleList;
 
-  constructor() {
-    for (let i = 0; i < 10; i++) {
-      this.bottles.push({
-        name: 'name' + i,
-        color: 'color' + i,
-        image: 'image' + i,
-        subtitle: 'subtitle' + i,
-        description: 'The description of the most famous wine in the world' + i
-      });
-    }
-  }
+  constructor(private bottlesService: BottlesService) {}
 
   ngOnInit() {
   }
 
-  onLoadBottle(name: string) {
-
+  getUserBottles() {
+    this.bottlesResponse = this.bottlesService.getUserBottles(0, 20)
+        .subscribe((data) => {
+          console.log(data);
+          this.bottleList = data;
+        });
   }
-
 }

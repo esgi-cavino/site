@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpHeaders, HttpRequest} from '@angular/common/http';
-import {stringify} from 'querystring';
-import {Token} from '@angular/compiler';
+import {HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +8,9 @@ export class UserService {
 
   private uuid = localStorage.getItem('uuid');
   private token = localStorage.getItem('token');
-  private options = {headers: new HttpHeaders({'Content-Type': 'application/json', Authorization: this.token})};
+  private options = {headers: new HttpHeaders({
+      Authorization: 'Bearer ' + this.token,
+      'Content-Type': 'application/json'})};
   private userInfoUri = 'https://esgi-cavino-api.herokuapp.com/api/user/' + this.uuid;
 
   constructor(private http: HttpClient) {
