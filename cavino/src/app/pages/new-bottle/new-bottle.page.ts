@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {NewBottleService} from '../../services/new-bottle.service';
+import {Router} from '@angular/router';
+import {RegionService} from '../../services/region.service';
 
 @Component({
   selector: 'app-new-bottle',
@@ -9,6 +11,7 @@ import {NewBottleService} from '../../services/new-bottle.service';
 export class NewBottlePage implements OnInit {
 
   private newBottleButtonStatus: boolean;
+  private regionList;
   private name: string;
   private description: string;
   private price: number;
@@ -20,9 +23,17 @@ export class NewBottlePage implements OnInit {
   private domainId: number;
   private vintageId: number;
 
-  constructor(private newBottleService: NewBottleService) { }
+  constructor(
+      private newBottleService: NewBottleService,
+      private regionService: RegionService,
+      private router: Router) { }
 
   ngOnInit() {
+    this.regionService.getRegionsList()
+        .subscribe((data) => {
+          this.regionList = data;
+          console.log(this.regionList);
+        });
   }
 
   createNewBottle(name: string,
@@ -49,6 +60,7 @@ export class NewBottlePage implements OnInit {
         .subscribe((data) => {
           console.log(data);
         });
+    this.newBottleButtonStatus = false;
   }
 
 }

@@ -38,7 +38,7 @@
                                     <li>Id : {{b.id}}</li>
                                     <input type="hidden" value="{{b.id}}" />
                                 </ul>
-                                <ion-img class="abicon" src="/assets/agriculture_biologique.png"></ion-img>
+                                <ion-img *ngIf="b.isOrganic" class="abicon" src="/assets/agriculture_biologique.png"></ion-img>
                             </ion-col>
                             <ion-col>
                                 <ion-img class="bottle_mini" src="/assets/medoc-2014.jpg"></ion-img>
