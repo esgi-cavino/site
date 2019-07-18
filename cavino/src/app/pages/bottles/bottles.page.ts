@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Subscription} from 'rxjs';
 import {BottlesService} from '../../services/bottles.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-bottles',
@@ -13,9 +14,10 @@ export class BottlesPage implements OnInit {
   private bottlesButtonStatus: boolean;
   private bottleList;
 
-  constructor(private bottlesService: BottlesService) {}
+  constructor(private bottlesService: BottlesService, private router: Router) {}
 
   ngOnInit() {
+      this.getUserBottles();
   }
 
   getUserBottles() {
@@ -24,5 +26,8 @@ export class BottlesPage implements OnInit {
           console.log(data);
           this.bottleList = data;
         });
+  }
+
+  goToBottle(id: number) {
   }
 }

@@ -4,6 +4,9 @@ class ApplicationDetails {
     public offlineUrl: string;
     public loginRoute: string;
     public registerRoute: string;
+    public bottlesRoute: string;
+    public bottleRoute: string;
+    public newBottleRoute: string;
 }
 
 export class ApplicationModel {
@@ -15,7 +18,9 @@ export class ApplicationModel {
         onlineUrl: 'https://esgi-cavino-api.herokuapp.com/api',
         offlineUrl: 'http://localhost:8100',
         loginRoute: '/signin',
-        registerRoute: '/register'
-
+        registerRoute: '/signup',
+        bottlesRoute: '/bottle',
+        bottleRoute: '/bottle',
+        newBottleRoute: '/bottle'
     };
 }

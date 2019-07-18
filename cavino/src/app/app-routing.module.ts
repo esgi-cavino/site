@@ -32,7 +32,8 @@ const routes: Routes = [
     loadChildren: './pages/register/register.module#RegisterPageModule'
   },
   { path: 'profile', loadChildren: './pages/profile/profile.module#ProfilePageModule' },
-  { path: 'bottle', loadChildren: './pages/bottle/bottle.module#BottlePageModule' }
+  { path: 'bottle', loadChildren: './pages/bottle/bottle.module#BottlePageModule' },  { path: 'new-bottle', loadChildren: './pages/new-bottle/new-bottle.module#NewBottlePageModule' }
+
 
 ];
 

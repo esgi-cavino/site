@@ -1,0 +1,94 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Nouvelle bouteille</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form name="registerForm" class="w3-container w3-card-4 w3-light-grey">
+    <p>Entrez vos informations ci-dessous afin d'enregistrer une nouvelle bouteille.</p>
+    <div>
+      <p>
+        <label>nom</label><br />
+        <input
+                name="name"
+                type="text"
+                [(ngModel)] = "name"></p>
+      <p>
+        <label>description</label><br />
+        <input
+                name="description"
+                type="text"
+                [(ngModel)] = "description"></p>
+      <p>
+        <label>prix</label><br />
+        <input
+                name="price"
+                type="text"
+                [(ngModel)] = "price"></p>
+      <p>
+        <label>prix moyen</label><br />
+        <input
+                name="averagePrice"
+                type="text"
+                [(ngModel)] = "averagePrice"></p>
+      <p>
+        <label>bio</label><br />
+        <input
+                name="isOrganic"
+                type="text"
+                [(ngModel)] = "isOrganic"></p>
+      <p>
+        <label>Type de vin</label><br />
+        <input
+                name="wineTypeId"
+                type="text"
+                [(ngModel)] = "wineTypeId"></p>
+      <p>
+        <label>pays</label><br />
+        <input
+                name="countryId"
+                type="text"
+                [(ngModel)] = "countryId"></p>
+      <p>
+        <label>région</label><br />
+        <input
+                name="regionId"
+                type="text"
+                [(ngModel)] = "regionId"></p>
+      <p>
+        <label>domaine</label><br />
+        <input
+                name="domainId"
+                type="text"
+                [(ngModel)] = "domainId"></p>
+      <p>
+        <label>millésime</label><br />
+        <input
+                name="vintageId"
+                type="text"
+                [(ngModel)] = "vintageId"></p>
+    </div>
+    <ion-button
+            expand="block"
+            shape="round"
+            [disabled]="newBottleButtonStatus"
+            (click)="createNewBottle(name,
+                                     description,
+                                     price,
+                                     averagePrice,
+                                     isOrganic,
+                                     wineTypeId,
+                                     countryId,
+                                     regionId,
+                                     domainId,
+                                     vintageId)">
+      Enregistrer
+    </ion-button><br />
+  </form>
+
+</ion-content>

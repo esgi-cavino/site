@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {HttpClient} from '@angular/common/http';
+import {Subscription} from 'rxjs';
+import {BottleService} from '../../services/bottle.service';
 
 @Component({
   selector: 'app-bottle',
@@ -7,9 +11,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BottlePage implements OnInit {
 
-  constructor() { }
+  private bottleResponse = Subscription;
+
+  constructor() {}
 
   ngOnInit() {
   }
-
 }

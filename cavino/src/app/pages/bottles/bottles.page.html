@@ -18,7 +18,7 @@
 
     <ion-list>
         <ion-menu-toggle auto-hide="false" *ngFor="let b of bottleList">
-            <ion-card [routerDirection]="'root'" [routerLink]="'/bottle'">
+            <ion-card>
                 <ion-card-content>
                     <ion-grid>
                         <ion-row>
@@ -35,6 +35,8 @@
                                     <li>domain : {{b.domain.name}}</li>
                                     <li>couleur : {{b.wineType.name}}</li>
                                     <li>Millésime : {{b.vintage.year}}</li>
+                                    <li>Id : {{b.id}}</li>
+                                    <input type="hidden" value="{{b.id}}" />
                                 </ul>
                                 <ion-img class="abicon" src="/assets/agriculture_biologique.png"></ion-img>
                             </ion-col>
@@ -50,14 +52,12 @@
 
 </ion-content>
 
-<ion-button
-        expand="block"
-        shape="round"
-        [disabled]="bottlesButtonStatus"
-        (click)="getUserBottles()">
-    update user infos
-</ion-button>
-
 <ion-footer padding>
-    <p>Bas de page</p>
+    <ion-button
+            expand="block"
+            shape="round"
+            [disabled]="bottlesButtonStatus"
+            routerLink="/new-bottle">
+        ajouter un bouteille
+    </ion-button>
 </ion-footer>

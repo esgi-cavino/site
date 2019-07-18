@@ -5,20 +5,16 @@ import {ApplicationModel} from '../constants/generalconstants';
 @Injectable({
   providedIn: 'root'
 })
-export class BottlesService {
+export class BottleService {
 
   private uuid = localStorage.getItem('uuid');
   private token = localStorage.getItem('token');
   private options = {headers: new HttpHeaders({
       Authorization: 'Bearer ' + this.token,
       'Content-Type': 'application/json'})};
-  private userBottlesUri =
+  private BottleDetailsUri =
       ApplicationModel.DefaultApplicationDetails.onlineUrl
-      + ApplicationModel.DefaultApplicationDetails.bottlesRoute;
+      + ApplicationModel.DefaultApplicationDetails.bottleRoute;
 
-  constructor(private http: HttpClient) {}
-
-  getUserBottles(offset: number, limit: number): any {
-    return this.http.get(this.userBottlesUri + '?offset=' + offset + '&limit=' + limit, this.options);
-  }
+  constructor() {}
 }

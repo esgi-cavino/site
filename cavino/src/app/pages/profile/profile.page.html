@@ -55,14 +55,15 @@
             [value]="createdAt"
             [(ngModel)] = "createdAt" />
     <br />
-    <ion-button
-            expand="block"
-            shape="round"
-            [disabled]="userButtonStatus"
-            (click)="getUserInfo()">
-      update user infos
-    </ion-button>
-    <br />
   </ion-card>
 
 </ion-content>
+<ion-footer>
+  <ion-button
+          expand="block"
+          shape="round"
+          [disabled]="userButtonStatus"
+          (click)="getUserInfo()">
+    update user infos
+  </ion-button>
+</ion-footer>
