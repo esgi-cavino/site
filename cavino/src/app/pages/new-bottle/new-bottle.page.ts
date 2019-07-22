@@ -5,6 +5,8 @@ import {RegionService} from '../../services/region.service';
 import {RegionList} from "../../models/region_list";
 import {CountryService} from "../../services/country.service";
 import {CountryList} from "../../models/country_list";
+import {DomainService} from "../../services/domain.service";
+import {DomainList} from "../../models/domain_list";
 
 @Component({
   selector: 'app-new-bottle',
@@ -16,6 +18,7 @@ export class NewBottlePage implements OnInit {
   private newBottleButtonStatus: boolean;
   private regionList: RegionList;
   private countryList: CountryList;
+  private domainList: DomainList;
   private name: string;
   private description: string;
   private price: number;
@@ -31,6 +34,7 @@ export class NewBottlePage implements OnInit {
       private newBottleService: NewBottleService,
       private regionService: RegionService,
       private countryService: CountryService,
+      private domainService: DomainService,
       private router: Router) { }
 
   ngOnInit() {
@@ -43,6 +47,11 @@ export class NewBottlePage implements OnInit {
         .subscribe((countryData) => {
           this.countryList = countryData;
           console.log(this.countryList);
+        });
+    this.domainService.getDomainList()
+        .subscribe((domainData) => {
+            this.domainList = domainData;
+            console.log(this.domainList);
         })
   }
 
