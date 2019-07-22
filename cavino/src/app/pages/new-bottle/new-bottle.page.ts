@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {NewBottleService} from '../../services/new-bottle.service';
 import {Router} from '@angular/router';
 import {RegionService} from '../../services/region.service';
+import {RegionList} from "../../models/region_list";
 
 @Component({
   selector: 'app-new-bottle',
@@ -11,7 +12,7 @@ import {RegionService} from '../../services/region.service';
 export class NewBottlePage implements OnInit {
 
   private newBottleButtonStatus: boolean;
-  private regionList;
+  private regionList: RegionList;
   private name: string;
   private description: string;
   private price: number;

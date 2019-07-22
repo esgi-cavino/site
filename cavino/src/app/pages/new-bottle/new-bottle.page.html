@@ -57,6 +57,9 @@
                 [(ngModel)] = "countryId"></p>
       <p>
         <label>région</label><br />
+        <select>
+          <option *ngFor="let region of regionList" value="{{ region.id }}">{{ region.name }}</option>
+        </select>
         <input
                 name="regionId"
                 type="text"
