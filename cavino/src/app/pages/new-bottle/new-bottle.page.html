@@ -51,6 +51,9 @@
                 [(ngModel)] = "wineTypeId"></p>
       <p>
         <label>pays</label><br />
+        <select>
+          <option *ngFor="let country of countryList" value="{{ country.id }}">{{ country.name }}</option>
+        </select>
         <input
                 name="countryId"
                 type="text"

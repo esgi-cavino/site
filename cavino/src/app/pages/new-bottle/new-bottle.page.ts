@@ -3,6 +3,8 @@ import {NewBottleService} from '../../services/new-bottle.service';
 import {Router} from '@angular/router';
 import {RegionService} from '../../services/region.service';
 import {RegionList} from "../../models/region_list";
+import {CountryService} from "../../services/country.service";
+import {CountryList} from "../../models/country_list";
 
 @Component({
   selector: 'app-new-bottle',
@@ -13,6 +15,7 @@ export class NewBottlePage implements OnInit {
 
   private newBottleButtonStatus: boolean;
   private regionList: RegionList;
+  private countryList: CountryList;
   private name: string;
   private description: string;
   private price: number;
@@ -27,14 +30,20 @@ export class NewBottlePage implements OnInit {
   constructor(
       private newBottleService: NewBottleService,
       private regionService: RegionService,
+      private countryService: CountryService,
       private router: Router) { }
 
   ngOnInit() {
     this.regionService.getRegionsList()
-        .subscribe((data) => {
-          this.regionList = data;
+        .subscribe((regionData) => {
+          this.regionList = regionData;
           console.log(this.regionList);
         });
+    this.countryService.getCountryList()
+        .subscribe((countryData) => {
+          this.countryList = countryData;
+          console.log(this.countryList);
+        })
   }
 
   createNewBottle(name: string,

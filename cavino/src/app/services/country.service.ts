@@ -5,27 +5,19 @@ import {ApplicationModel} from '../constants/generalconstants';
 @Injectable({
   providedIn: 'root'
 })
-export class RegionService {
+export class CountryService {
 
   private uuid = localStorage.getItem('uuid');
   private token = localStorage.getItem('token');
   private options = {headers: new HttpHeaders({
       Authorization: 'Bearer ' + this.token,
       'Content-Type': 'application/json'})};
-  private regionListUri =
-      ApplicationModel.DefaultApplicationDetails.onlineUrl
-      + ApplicationModel.DefaultApplicationDetails.regionsRoute
-      + '?offset=0&limit=20';
   private countryListUri =
       ApplicationModel.DefaultApplicationDetails.onlineUrl
       + ApplicationModel.DefaultApplicationDetails.countryRoute
       + '?offset=0&limit=20';
 
   constructor(private http: HttpClient) { }
-
-  getRegionsList(): any {
-    return this.http.get(this.regionListUri, this.options);
-  }
 
   getCountryList(): any {
     return this.http.get(this.countryListUri, this.options);
