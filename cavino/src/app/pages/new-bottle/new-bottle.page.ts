@@ -7,6 +7,8 @@ import {CountryService} from "../../services/country.service";
 import {CountryList} from "../../models/country_list";
 import {DomainService} from "../../services/domain.service";
 import {DomainList} from "../../models/domain_list";
+import {VintageService} from "../../services/vintage.service";
+import {VintageList} from "../../models/vintage_list";
 
 @Component({
   selector: 'app-new-bottle',
@@ -19,6 +21,7 @@ export class NewBottlePage implements OnInit {
   private regionList: RegionList;
   private countryList: CountryList;
   private domainList: DomainList;
+  private vintageList: VintageList;
   private name: string;
   private description: string;
   private price: number;
@@ -35,6 +38,7 @@ export class NewBottlePage implements OnInit {
       private regionService: RegionService,
       private countryService: CountryService,
       private domainService: DomainService,
+      private vintageService: VintageService,
       private router: Router) { }
 
   ngOnInit() {
@@ -52,7 +56,12 @@ export class NewBottlePage implements OnInit {
         .subscribe((domainData) => {
             this.domainList = domainData;
             console.log(this.domainList);
-        })
+        });
+    this.vintageService.getVintageList()
+        .subscribe((vintageData) => {
+            this.vintageList = vintageData
+            console.log(this.vintageList);
+        });
   }
 
   createNewBottle(name: string,

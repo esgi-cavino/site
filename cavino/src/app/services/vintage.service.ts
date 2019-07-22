@@ -5,21 +5,21 @@ import {ApplicationModel} from '../constants/generalconstants';
 @Injectable({
   providedIn: 'root'
 })
-export class CountryService {
+export class VintageService {
 
   private uuid = localStorage.getItem('uuid');
   private token = localStorage.getItem('token');
   private options = {headers: new HttpHeaders({
       Authorization: 'Bearer ' + this.token,
       'Content-Type': 'application/json'})};
-  private countryListUri =
+  private vintageListUri =
       ApplicationModel.DefaultApplicationDetails.onlineUrl
-      + ApplicationModel.DefaultApplicationDetails.countryRoute
+      + ApplicationModel.DefaultApplicationDetails.vintageRoute
       + '?offset=0&limit=20';
 
   constructor(private http: HttpClient) { }
 
-  public getCountryList(): any {
-    return this.http.get(this.countryListUri, this.options);
+  public getVintageList(): any {
+    return this.http.get(this.vintageListUri, this.options);
   }
 }

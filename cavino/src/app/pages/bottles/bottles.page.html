@@ -24,16 +24,16 @@
                         <ion-row>
                             <ion-col>
                                 <ion-card-header>
-                                    <ion-card-title>{{b.name}}</ion-card-title>
+                                    <ion-card-title>{{b.year}}</ion-card-title>
                                     <ion-card-subtitle>{{b.description}}</ion-card-subtitle>
                                 </ion-card-header>
                                 <ul>
                                     <li>prix actuel : {{b.price}}</li>
                                     <li>prix moyen : {{b.averagePrice}}</li>
-                                    <li>pays : {{b.country.name}}</li>
+                                    <li>pays : {{b.country.year}}</li>
                                     <li>région : {{b.region.name}}</li>
-                                    <li>domain : {{b.domain.name}}</li>
-                                    <li>couleur : {{b.wineType.name}}</li>
+                                    <li>domain : {{b.domain.year}}</li>
+                                    <li>couleur : {{b.wineType.year}}</li>
                                     <li>Millésime : {{b.vintage.year}}</li>
                                     <li>Id : {{b.id}}</li>
                                     <input type="hidden" value="{{b.id}}" />

@@ -10,6 +10,7 @@ class ApplicationDetails {
     public regionsRoute: string;
     public countryRoute: string;
     public domainRoute: string;
+    public vintageRoute: string;
 }
 
 export class ApplicationModel {
@@ -27,6 +28,7 @@ export class ApplicationModel {
         newBottleRoute: '/bottle',
         regionsRoute: '/region',
         countryRoute: '/country',
-        domainRoute: '/domain'
+        domainRoute: '/domain',
+        vintageRoute: '/vintage'
     };
 }

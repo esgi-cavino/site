@@ -78,6 +78,9 @@
                 [(ngModel)] = "domainId"></p>
       <p>
         <label>millésime</label><br />
+          <select>
+              <option *ngFor="let vintage of vintageList" value="{{ vintage.id }}">{{ vintage.year }}</option>
+          </select>
         <input
                 name="vintageId"
                 type="text"
