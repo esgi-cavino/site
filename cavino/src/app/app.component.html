@@ -7,8 +7,9 @@
         </ion-toolbar>
       </ion-header>
       <ion-content>
+
         <ion-list *ngIf="!alreadyConnected">
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of offlineAppPages">
+          <ion-menu-toggle auto-hide="true" *ngFor="let p of offlineAppPages">
             <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
               <ion-icon slot="start" [name]="p.icon"></ion-icon>
               <ion-label>

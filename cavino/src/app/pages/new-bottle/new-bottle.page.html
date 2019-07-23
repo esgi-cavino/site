@@ -45,6 +45,9 @@
                 [(ngModel)] = "isOrganic"></p>
       <p>
         <label>Type de vin</label><br />
+        <select>
+          <option *ngFor="let wineType of wineTypeList" [value]="wineType.id">{{ wineType.name }}</option>
+        </select>
         <input
                 name="wineTypeId"
                 type="text"

@@ -5,21 +5,21 @@ import {ApplicationModel} from '../constants/generalconstants';
 @Injectable({
   providedIn: 'root'
 })
-export class DomainService {
+export class WineTypeService {
 
   private uuid = localStorage.getItem('uuid');
   private token = localStorage.getItem('token');
   private options = {headers: new HttpHeaders({
       Authorization: 'Bearer ' + this.token,
       'Content-Type': 'application/json'})};
-  private domainListUri =
+  private wineTypeListUri =
       ApplicationModel.DefaultApplicationDetails.onlineUrl
-      + ApplicationModel.DefaultApplicationDetails.domainRoute
+      + ApplicationModel.DefaultApplicationDetails.wineTypeRoute
       + '?offset=0&limit=20';
 
   constructor(private http: HttpClient) { }
 
-  public getDomainList(): any {
-    return this.http.get(this.domainListUri, this.options);
+  public getWineTypeList(): any {
+    return this.http.get(this.wineTypeListUri, this.options);
   }
 }

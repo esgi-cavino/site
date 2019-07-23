@@ -2,13 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import {NewBottleService} from '../../services/new-bottle.service';
 import {Router} from '@angular/router';
 import {RegionService} from '../../services/region.service';
-import {RegionList} from "../../models/region_list";
-import {CountryService} from "../../services/country.service";
-import {CountryList} from "../../models/country_list";
-import {DomainService} from "../../services/domain.service";
-import {DomainList} from "../../models/domain_list";
-import {VintageService} from "../../services/vintage.service";
-import {VintageList} from "../../models/vintage_list";
+import {RegionList} from '../../models/region_list';
+import {CountryService} from '../../services/country.service';
+import {CountryList} from '../../models/country_list';
+import {DomainService} from '../../services/domain.service';
+import {DomainList} from '../../models/domain_list';
+import {VintageService} from '../../services/vintage.service';
+import {VintageList} from '../../models/vintage_list';
+import {WineTypeService} from '../../services/wine-type.service';
+import {WineTypeList} from '../../models/wine_type_list';
 
 @Component({
   selector: 'app-new-bottle',
@@ -22,6 +24,7 @@ export class NewBottlePage implements OnInit {
   private countryList: CountryList;
   private domainList: DomainList;
   private vintageList: VintageList;
+  private wineTypeList: WineTypeList;
   private name: string;
   private description: string;
   private price: number;
@@ -39,6 +42,7 @@ export class NewBottlePage implements OnInit {
       private countryService: CountryService,
       private domainService: DomainService,
       private vintageService: VintageService,
+      private wineTypeService: WineTypeService,
       private router: Router) { }
 
   ngOnInit() {
@@ -61,6 +65,11 @@ export class NewBottlePage implements OnInit {
         .subscribe((vintageData) => {
             this.vintageList = vintageData
             console.log(this.vintageList);
+        });
+    this.wineTypeService.getWineTypeList()
+        .subscribe((wineTypeData) => {
+            this.wineTypeList = wineTypeData;
+            console.log(this.wineTypeList);
         });
   }
 
