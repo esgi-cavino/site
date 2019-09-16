@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button [routerLink]="'/cellars'">
+      <ion-icon name="arrow-dropleft-circle"></ion-icon>
+    </ion-button>
+    <ion-title>new-cellar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <p>
+    <label>nom</label><br />
+    <input
+            name="name"
+            type="text"
+            [(ngModel)] = "name">
+  </p>
+  <p>
+    <label>largeur</label><br />
+    <input
+            name="width"
+            type="text"
+            [(ngModel)] = "width">
+  </p>
+  <p>
+    <label>hauteur</label><br />
+    <input
+            name="height"
+            type="text"
+            [(ngModel)] = "height">
+  </p>
+
+</ion-content>
+
+<ion-footer>
+  <ion-button (click)="createNewCellar(name, width, height)">créer</ion-button>
+</ion-footer>

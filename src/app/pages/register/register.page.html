@@ -1,0 +1,62 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="'/login'">
+        <ion-icon name="arrow-dropleft-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Cavino
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form class="center-elements" name="registerForm">
+    <h2>Inscription</h2>
+    <p>Entrez vos informations ci-dessous afin de vous inscrire.</p>
+
+    <p>
+      <label>prénom</label><br />
+      <input
+              name="firstname"
+              type="text"
+              [(ngModel)] = "firstname"></p>
+    <p>
+      <label>nom de famille</label><br />
+      <input
+              name="lastname"
+              type="text"
+              [(ngModel)] = "lastname"></p>
+    <p>
+      <label>e-mail</label><br />
+      <input
+              name="email"
+              type="text"
+              [(ngModel)] = "email"></p>
+    <p>
+      <label>mot de passe</label><br />
+      <input
+              name="password"
+              type="password"
+              [(ngModel)] = "password"></p>
+    <p>
+      <label>retapez le mot de passe</label><br />
+      <input
+              name="password_bis"
+              type="password"
+              [(ngModel)] = "passwordbis"></p>
+
+    <ion-button
+            shape="round"
+            [disabled]="registerButtonStatus"
+            (click)="register(firstname, lastname, email, password )">
+      inscription
+    </ion-button><br />
+  </form>
+
+</ion-content>

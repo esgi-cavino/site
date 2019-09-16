@@ -1,0 +1,41 @@
+.bottle_mini {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 350px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.abicon {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 50px;
+  height: auto;
+  margin-right: auto;
+}
+
+.div_left {
+  margin-left: 0px;
+  width: 50%;
+}
+
+.div_right {
+  margin-right: 0px;
+  width: 50%;
+}
+
+ion-card {
+  max-width: 500px;
+}
+
+.centered {
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.tag-icon{
+  margin-right: 10px;
+}
