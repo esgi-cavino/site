@@ -1,156 +1,239 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="76b6bb6c-17fc-4e54-9f88-38d4676a087c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/site.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="cb98d2f5-0345-4b1f-ab46-0fa7442bf305" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/e2e/tsconfig.e2e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/ionic.config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/android/icon/drawable-hdpi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/android/icon/drawable-ldpi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/android/icon/drawable-mdpi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/android/icon/drawable-xhdpi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/android/icon/drawable-xxhdpi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/android/icon/drawable-xxxhdpi-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/android/splash/drawable-land-hdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/android/splash/drawable-land-ldpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/android/splash/drawable-land-mdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/android/splash/drawable-land-xhdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/android/splash/drawable-land-xxhdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/android/splash/drawable-land-xxxhdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/android/splash/drawable-port-hdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/android/splash/drawable-port-ldpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/android/splash/drawable-port-mdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/android/splash/drawable-port-xhdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/android/splash/drawable-port-xxhdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/android/splash/drawable-port-xxxhdpi-screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/android/xml/network_security_config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/icon/icon-1024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/icon/icon-40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/icon/icon-40@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/icon/icon-40@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/icon/icon-50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/icon/icon-50@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/icon/icon-60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/icon/icon-60@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/icon/icon-60@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/icon/icon-72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/icon/icon-72@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/icon/icon-76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/icon/icon-76@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/icon/icon-83.5@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/icon/icon-small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/icon/icon-small@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/icon/icon-small@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/icon/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/icon/icon@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/splash/Default-568h@2x~iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/splash/Default-667h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/splash/Default-736h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/splash/Default-Landscape-736h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/splash/Default-Landscape@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/splash/Default-Landscape@~ipadpro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/splash/Default-Landscape~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/splash/Default-Portrait@2x~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/splash/Default-Portrait@~ipadpro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/splash/Default-Portrait~ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/splash/Default@2x~iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/splash/Default@2x~universal~anyany.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/ios/splash/Default~iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/resources/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/config/config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/constants/generalconstants.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/home/home.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/home/home.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/home/home.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/home/home.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/home/home.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/models/country.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/models/country_list.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/models/domain.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/models/domain_list.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/models/region.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/models/region_list.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/models/vintage.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/models/vintage_list.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/models/wine_type.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/models/wine_type_list.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/bottle/bottle.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/bottle/bottle.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/bottle/bottle.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/bottle/bottle.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/bottle/bottle.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/bottles/bottle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/bottles/bottles.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/bottles/bottles.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/bottles/bottles.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/bottles/bottles.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/bottles/bottles.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/login/login.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/login/login.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/login/login.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/login/login.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/login/login.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/new-bottle/new-bottle.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/new-bottle/new-bottle.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/new-bottle/new-bottle.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/new-bottle/new-bottle.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/new-bottle/new-bottle.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/profile/profile.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/profile/profile.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/profile/profile.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/profile/profile.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/profile/profile.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/register/register.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/register/register.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/register/register.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/register/register.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/register/register.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/single-appareil/single-appareil.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/single-appareil/single-appareil.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/single-appareil/single-appareil.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/single-appareil/single-appareil.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/single-appareil/single-appareil.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/single-bottle/single-bottle.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/single-bottle/single-bottle.page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/single-bottle/single-bottle.page.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/single-bottle/single-bottle.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/pages/single-bottle/single-bottle.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/bottle.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/bottle.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/bottles.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/bottles.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/country.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/country.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/domain.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/domain.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/login.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/login.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/new-bottle.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/new-bottle.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/region.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/region.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/register.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/register.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/user.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/user.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/vintage.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/vintage.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/wine-type.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/app/services/wine-type.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/assets/AL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/assets/agriculture_biologique.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/assets/bottle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/assets/cavavin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/assets/icon/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/assets/lilcavavin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/assets/medoc-2014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/assets/shapes.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/global.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/theme/variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/src/zone-flags.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cavino/tslint.json" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cavino/src/app/app-routing.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="19" column="62" lean-forward="true" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cavino/src/app/app.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cavino/src/app/pages/login/login.page.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cavino/src/app/pages/login/login.page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/cavino/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/cavino/src/app/login/login.module.ts" />
-        <option value="$PROJECT_DIR$/cavino/src/app/login/login.page.ts" />
-        <option value="$PROJECT_DIR$/cavino/src/app/login/login.page.html" />
-        <option value="$PROJECT_DIR$/cavino/src/app/app.component.spec.ts" />
-        <option value="$PROJECT_DIR$/cavino/src/app/app-routing.module.ts" />
-        <option value="$PROJECT_DIR$/cavino/src/app/app.component.ts" />
-        <option value="$PROJECT_DIR$/cavino/src/app/pages/login/login.page.html" />
-        <option value="$PROJECT_DIR$/cavino/src/app/pages/login/login.page.ts" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1098" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="cavino" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="cavino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="cavino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="cavino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="cavino" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
+  <component name="ProjectId" id="1OQT7vMeORAh9u9V9s4JhbCie4P" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="ts.external.directory.path" value="E:\ESGI4-cavino\site\cavino\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ESGI4-cavino\site\cavino\src\assets\fonts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ESGI4-cavino\site\cavino\src\assets" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -169,155 +252,69 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="76b6bb6c-17fc-4e54-9f88-38d4676a087c" name="Default Changelist" comment="" />
-      <created>1558357170533</created>
+      <changelist id="cb98d2f5-0345-4b1f-ab46-0fa7442bf305" name="Default Changelist" comment="" />
+      <created>1559222124359</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1558357170533</updated>
-      <workItem from="1558357171788" duration="16108000" />
+      <updated>1559222124359</updated>
+      <workItem from="1559222128726" duration="3984000" />
+      <workItem from="1559403780336" duration="100000" />
+      <workItem from="1559568011231" duration="53000" />
+      <workItem from="1560094903775" duration="1597000" />
+      <workItem from="1560158433963" duration="3643000" />
+      <workItem from="1560181175311" duration="5293000" />
+      <workItem from="1560936092054" duration="2978000" />
+      <workItem from="1561702575863" duration="8972000" />
+      <workItem from="1561810982118" duration="8286000" />
+      <workItem from="1561879562991" duration="81000" />
+      <workItem from="1561891134971" duration="7310000" />
+      <workItem from="1562840793928" duration="11100000" />
+      <workItem from="1563261070261" duration="2394000" />
+      <workItem from="1563391650894" duration="36600000" />
+      <workItem from="1563838822456" duration="766000" />
+      <workItem from="1563908659080" duration="9633000" />
+      <workItem from="1564176142401" duration="2212000" />
+      <workItem from="1564422311395" duration="5518000" />
+      <workItem from="1564694738109" duration="606000" />
+      <workItem from="1564844866404" duration="2199000" />
+      <workItem from="1564927441752" duration="5540000" />
+      <workItem from="1565174191034" duration="4240000" />
+      <workItem from="1565179101575" duration="3810000" />
+      <workItem from="1565533887817" duration="4374000" />
+      <workItem from="1566482481189" duration="135000" />
+      <workItem from="1566483073923" duration="9463000" />
+      <workItem from="1567004267776" duration="1399000" />
+      <workItem from="1567026898238" duration="2439000" />
+      <workItem from="1567097177509" duration="11435000" />
+      <workItem from="1567495185049" duration="22000" />
+      <workItem from="1567495323731" duration="736000" />
+      <workItem from="1567518050709" duration="4191000" />
+      <workItem from="1567589227063" duration="8228000" />
+      <workItem from="1567694531397" duration="27691000" />
+      <workItem from="1568195837793" duration="1293000" />
+      <workItem from="1568203141583" duration="1677000" />
+      <workItem from="1568233638592" duration="4432000" />
+      <workItem from="1568358423763" duration="1073000" />
+      <workItem from="1568456374516" duration="4317000" />
+      <workItem from="1568659859929" duration="1223000" />
+      <workItem from="1568666518262" duration="59000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16108000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17250496" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="TypeScript" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.19546743" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cavino/src/app/home/home.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cavino/src/app/login/login.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cavino/src/app/login/login.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="12" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#ion-title#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-button#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-button#1;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cavino/src/app/login/login.page.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cavino/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cavino/src/app/list/list.page.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cavino/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cavino/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cavino/src/app/app.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="55" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cavino/src/app/home/home.page.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cavino/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cavino/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="19" column="62" lean-forward="true" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cavino/src/app/pages/login/login.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="61" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cavino/src/app/pages/login/login.page.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
